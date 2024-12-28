@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+      rel="stylesheet"
+      type="text/css"
+      
+    />
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+  />
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick Carousel JS -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"
+  ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+  <body>
+  
+
+
+    
+    <header class="background-container">
+      <nav class="nav-bar">
+        <div class="logo">
+          <svg 
+            id="ny2025"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 95 50"
+          >
+            <text
+              id="tiago-text"
+              x="0"
+              y="35"
+              font-family="Arial"
+              font-size="30"
+            >
+              TIAGO
+            </text>
+          </svg>
+        </div>
+        <div class="nav-list">
+          <ul>
+            
+          <li class="nav-item"><a class="link-nav na-link" href="#meus-trabalhos">Meus trabalhos</a></li>
+          <li class="nav-item"><a class="link-nav na-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="na-link" target="_blank" href="https://www.instagram.com/tiago_balan/"><i style="color: #888;" class='bx bxl-instagram icone-rede-social'></i></a></li>
+          <li class="nav-item"><a class="na-link" target="_blank" href="https://www.linkedin.com/in/tiago-balan-ld15/"><i  style="color: #888;" class='bx bxl-linkedin icone-rede-social'></i></a></li>
+          </ul>
+        </div>
+        <div class="login-button">
+          <button id="toggleMode" class="toggleMode">
+            <img id="toggleIcon" class="toggleIcon" src="sol.png" alt="Dark Mode" />
+          </button>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="showMenu()">
+            <img
+              class="icon"
+              src="menu-regular-36.png"
+              alt="botao do menu"
+            />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a class="link-nav na-link" href="#meus-trabalhos">Meus trabalhos</a></li>
+          <li class="nav-item"><a class="link-nav na-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="na-link" target="_blank" href="https://www.instagram.com/tiago_balan/"><i style="color: #888;" class='bx bxl-instagram icone-rede-social'></i></a></li>
+          <li class="nav-item"><a class="na-link" target="_blank" href="https://www.linkedin.com/in/tiago-balan-ld15/"><i  style="color: #888;" class='bx bxl-linkedin icone-rede-social'></i></a></li>
+        </ul>
+        <div class="login-button">
+          <button id="toggleMode" class="toggleMode">
+            <img class="toggleIcon" id="toggleIcon" src="sol.png" alt="Dark Mode" />
+          </button>
+        </div>
+        <hr>
+      </div>
+    </header>
+
+    
+
+    <div class="container-main main2 background-container">
+      <h1>
+        Construo
+        <span
+          class="txt-rotate texto-destaque"
+          data-period="2000"
+          data-rotate='[ " sua Landing Page.", " seu Site.", " seu E-commerce.", " seu Portfolio." ]'
+        ></span>
+      </h1>
+      <h2>Marque sua presença na web!</h2>
+      <p>
+        Me chamo Tiago Balan e sou graduando em Engenharia de Software. <br />
+        Atualmente trabalhando como desenvolvedor front end em plataformas como
+        WordPress, RD e Shopify.
+      </p>
+    </div>
+
+<!--
+    <div class="container background-container" id="container">
+      <div class="caixote container2" data-image="Group 2 (1).jpg">
+        <div class="div-img-nome">
+          <h2 class="h2-caixote">
+            <img
+              src="https://abcrede.psi.br/wp-content/uploads/2024/08/Layer_1-37.png"
+              alt=""
+            />
+          </h2>
+        </div>
+        <p class="paragrafo none">Um site desenvolvido em WordPress</p>
+      </div>
+      <div
+        class="caixote container3"
+        data-image="https://grupomorenarosa.com.br/wp-content/uploads/2024/07/ZIN.jpg"
+      >
+        <div class="div-img-nome">
+          <h2 class="h2-caixote">
+            <img src="robs-removebg-preview.png" alt="" />
+          </h2>
+        </div>
+        <p class="paragrafo none">E-commerce desenvolvido no Shopify</p>
+      </div>
+
+      <div class="caixote container3 especial" data-image="Group 2 (1).jpg">
+        <div class="div-img-nome">
+          <h2 class="h2-caixote">
+            <img class="ajuste" src="" alt="" />
+            <button class="custom-btn btn-6">
+              <span
+                ><a class="link-btn" href="#meus-trabalhos"
+                  >Confira mais</a
+                ></span
+              >
+            </button>
+          </h2>
+        </div>
+        <p class="paragrafo none"></p>
+      </div>
+    </div>
+    <div class="container-mobile">
+      <div
+        class="caixote-mobile container1-mobile"
+        data-image="https://grupomorenarosa.com.br/wp-content/uploads/2024/07/MOR.jpg"
+      >
+        <h2 class="h2-caixote-mobile">
+          <img
+            class="img-h2"
+            src="https://abcrede.psi.br/wp-content/uploads/2024/08/Layer_1-37.png"
+            alt=""
+          />
+        </h2>
+        <p class="paragrafo">Site desenvolvido em WordPress</p>
+      </div>
+      <div
+        class="caixote-mobile container2-mobile"
+        data-image="https://grupomorenarosa.com.br/wp-content/uploads/2024/07/MV.jpg"
+      >
+        <h2 class="h2-caixote-mobile">
+          <img class="img-h2" src="robs-removebg-preview.png" alt="" />
+        </h2>
+        <p class="paragrafo">E-commerce desenvolvido no Shopify</p>
+      </div>
+      <div
+        class="caixote-mobile container3-mobile"
+        data-image="https://grupomorenarosa.com.br/wp-content/uploads/2024/07/ZIN.jpg"
+      >
+        <h2 class="h2-caixote-mobile">
+          <button class="custom-btn btn-6">
+            <span
+              ><a class="link-btn" href="#meus-trabalhos">Confira mais</a></span
+            >
+          </button>
+        </h2>
+      </div>
+    </div>
+ -->
+    
+   
+
+
+
+    <div class="container-main background-container" id="meus-trabalhos">
+      <h2>Meus trabalhos</h2>
+      <div class="trabalhos">
+        <hr />
+        <div class="trabalho1">
+          <img src="Layer_1.png" alt="" />
+          <p class="hovertexto">Site completo Wordpress! <br>
+          Confira no vídeo a home do site, demais páginas apresento em uma apresentação <br> <br>
+          <br>
+            Totalmente responsivo.
+            <br>
+            <br>
+           Direitos do design e textos atribuidos a BW8 Martech. 
+            
+        </p>
+        <div class="div-video">
+          <video class="video-site" controls src="Vídeo sem título ‐ Feito com o Clipchamp (1).mp4"></video>
+        </div>
+
+        </div>
+        <hr />
+        <div class="trabalho1">
+          <img src="Layer_1.png" alt="" />
+          <p class="hovertexto">Reestruturação de um site Wordpress! <br> Confira a home do site, demais páginas apresento em uma apresentação <br> <br> 
+              <br>Totalmente responsivo. <br> <br>
+            Direitos do design e textos atribuidos a BW8 Martech. 
+          </p>
+          <div class="div-video">
+          <video class="video-site" controls src="Vídeo sem título ‐ Feito com o Clipchamp (2).mp4"></video>
+        </div>
+        </div>
+        <hr />
+        <div class="trabalho1">
+          <img src="Layer_1.png" alt="" />
+          <p class="hovertexto">Criação de uma landing page em HTML, CSS E JS. A landing page encontra-se na wep hospedada no meu github<br> <br>
+           
+            <br>
+          Totalmente responsiva          </p>
+          <div class="div-video">
+          <video class="video-site" controls src="Vídeo sem título ‐ Feito com o Clipchamp (3).mp4"></video>
+        </div>
+        </div>
+        <hr />
+        
+        <hr />
+      </div>
+
+      <div class="cards">
+        <div class="card-project">
+          <h3>Catálogo musical</h3>
+          <p>Aplicação full stack construída usando node.js, html, css, js</p><br>
+          <a class="link-projeto" target="_blank" href="https://github.com/tiagobalan2/discoteca---catalogo">Confira no github</a>
+        </div>
+        <div class="card-project">
+          <h3>Site construído para o Pensamento Computacional Unifil</h3>
+          <p>Site construído usando AngularJS</p><br>
+          <a class="link-projeto" target="_blank" href="https://github.com/tiagobalan2/site-pi-angular">Confira no github</a><br>
+          <a class="link-projeto" target="_blank" href="https://memoriapc.unifil.tech/inicial/">Confira na web</a>
+        </div>
+        <div class="card-project">
+          <h3>Cadastro de pessoas</h3>
+          <p>Aplicação CRUD full stack para cadastro de pessoas construída em node.js, html, css, js</p><br>
+          <a class="link-projeto" target="_blank" href="https://github.com/tiagobalan2/trabalhofullstack">Confira no github</a>
+        </div>
+        <div class="card-project">
+          <h3>Login e Cadastro</h3>
+          <p>Aplicação de login e cadastro de usuários construída usando Java Spring Boot e AngularJS</p><br>
+          <a class="link-projeto" target="_blank" href="https://github.com/tiagobalan2/fullstack-login-cadastro">Confira no github</a>
+        </div>
+        <div class="card-project">
+          <h3>Consulta CEP</h3>
+          <p>Site e extensão do Chrome de consulta de cep construído com html, css e js</p><br>
+          <a class="link-projeto" target="_blank" href="https://github.com/tiagobalan2/ConsultaCEP">Confira no github</a>
+        </div>
+        
+      </div>
+        
+    </div>
+
+    <div class="container-main background-container">
+      <h2 class="contact-test-h2">Entre em contato comigo!</h2>
+    </div>
+    <div class="container-main background-container" id="contato">
+      <p>Email: tiagoleomil@gmail.com</p>
+      <br />
+      <hr />
+      <br />
+      <p>43 99984-1002</p>
+      <br />
+      <hr />
+      <br />
+      <p>Instagram: tiago_balan <a target="_blank" href="https://www.instagram.com/tiago_balan/"><i style="color: #888;" class='bx bxl-instagram icone-rede-social'></i></a></p></p>
+      <br />
+      <hr />
+      <br>
+      <p>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/tiago-balan-ld15/
+
+        ">Clique aqui</a> <i  style="color: #888;" class='bx bxl-linkedin icone-rede-social'></i></p>
+        <br>
+        <hr>
+        <br>
+        <p>Github: <a href="https://github.com/tiagobalan2" target="_blank">Clique aqui</a></p>
+    </div>
+
+  
+
+
+
+  
+</html>
